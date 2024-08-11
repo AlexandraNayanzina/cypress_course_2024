@@ -1,2 +1,22 @@
-# cypress_course_2024
-Udemy. The Complete Cypress v12 Course- Automation Testing Bootcamp. 
+# Cypress course 2024
+[Udemy. The Complete Cypress v12 Course-Automation Testing Bootcamp](https://www.udemy.com/share/103quk3@i6toJiWbKxehYhSyPOC-Xe0s9JYWUDjz6MvwyfQ0Zb6FKl8-RCRSrACFsHa-_XelNg==/)
+
+## Run tests locally
+
+- **install dependencies**
+``` 
+npm init
+```
+- **run all rests headlessly**
+``` 
+npx cypress run
+```
+- **run a specific rest headlessly**
+``` 
+npx cypress run --spec "cypress/e2e/my-spec.cy.js
+```
+- **open cypress app**
+``` 
+npx cypress open
+```
+
