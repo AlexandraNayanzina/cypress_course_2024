@@ -20,3 +20,14 @@ npx cypress run --spec "cypress/e2e/my-spec.cy.js
 npx cypress open
 ```
 
+## Useful  commands
+- **install xpath plugin**
+``` 
+npm install --save-dev @cypress/xpath
+```
+
+## Useful  configurations
+- **Test files to load, cypress.config.js**
+``` 
+specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx, feature}"
+```
