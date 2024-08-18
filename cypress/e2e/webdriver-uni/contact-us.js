@@ -32,6 +32,9 @@ describe('Interacting with web elements', {
         cy.get('[type="reset"][value="RESET"]').should('be.visible')
         // By xpath
         cy.xpath('//input[@value="SUBMIT"]').click({force: true})
+        cy.location('href').should('eq','https://webdriveruniversity.com/Contact-Us/contact-form-thank-you.html')
+        cy.get('h1').should('have.text','Thank You for your Message!')
+        cy.get('#fountainG').should('be.visible')
       })
   })
 
