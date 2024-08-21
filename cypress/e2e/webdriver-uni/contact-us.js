@@ -42,13 +42,22 @@ describe('Interacting with web elements', {
         // spec config
       },
       ()=> {
-      const errorMessage = '\n\n\n Error: all fields are required\n Error: Invalid email address\n\n\n'
+        const errorMessage = '\n\n\n Error: all fields are required\n Error: Invalid email address\n\n\n'
         cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
         cy.xpath('//input[@value="SUBMIT"]').click({force: true})
         cy.location('href').should('eq','https://webdriveruniversity.com/Contact-Us/contact_us.php')
         cy.contains('Error: all fields are required').should('be.visible')
         cy.contains('Error: Invalid email address').should('be.visible')
         cy.get('body').first().should('have.text', errorMessage)
+
+      })
+
+    it.only('Cypress "window" object', ()=> {
+
+        cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
+        cy.document().should('have.property', 'charset').and('eq','UTF-8')
+        cy.title().should('eq','WebDriver | Contact Us')
+        cy.url().should('include','contactus.html')
 
       })
   })
