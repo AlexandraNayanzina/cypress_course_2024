@@ -21,9 +21,7 @@ describe('Interacting with web elements', {
         //By tag name
         cy.get('h2').should('have.text','CONTACT US')
         // By attribute name and value
-        cy.get('input[name="first_name"]')
-          .should('have.attr','name','first_name')
-          .type(testData.first_name)
+        cy.get('input[name="first_name"]').type(testData.first_name)
         // By id
         cy.get('#contact_form').find('input[name="last_name"]').type(testData.last_name)
         // By class
