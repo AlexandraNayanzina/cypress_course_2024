@@ -32,6 +32,24 @@ describe('Interacting with web elements', {
         cy.get('[type="reset"][value="RESET"]').should('be.visible')
         // By xpath
         cy.xpath('//input[@value="SUBMIT"]').click({force: true})
+        cy.location('href').should('eq','https://webdriveruniversity.com/Contact-Us/contact-form-thank-you.html')
+        cy.get('h1').should('have.text','Thank You for your Message!')
+        cy.contains(/^Thank/i)
+        cy.get('#fountainG').should('be.visible')
+      })
+
+    it('Submit Contact Us form - negative case - submit empty form', {
+        // spec config
+      },
+      ()=> {
+      const errorMessage = '\n\n\n Error: all fields are required\n Error: Invalid email address\n\n\n'
+        cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
+        cy.xpath('//input[@value="SUBMIT"]').click({force: true})
+        cy.location('href').should('eq','https://webdriveruniversity.com/Contact-Us/contact_us.php')
+        cy.contains('Error: all fields are required').should('be.visible')
+        cy.contains('Error: Invalid email address').should('be.visible')
+        cy.get('body').first().should('have.text', errorMessage)
+
       })
   })
 

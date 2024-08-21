@@ -31,3 +31,7 @@ npm install --save-dev @cypress/xpath
 ``` 
 specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx, feature}"
 ```
+
+## Useful  links
+- **[Chai assertion library](https://www.chaijs.com/)**
+- **[Cypress doc, assertions](https://docs.cypress.io/guides/references/assertions)**
