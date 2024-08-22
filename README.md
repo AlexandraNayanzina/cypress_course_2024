@@ -7,17 +7,39 @@
 ``` 
 npm init
 ```
-- **run all rests headlessly**
+- **run all rests in a headless mode**
 ``` 
 npx cypress run
 ```
-- **run a specific rest headlessly**
+- **run a specific rest in a headless mode**
 ``` 
 npx cypress run --spec "cypress/e2e/my-spec.cy.js
 ```
 - **open cypress app**
 ``` 
 npx cypress open
+```
+### Alternative run
+
+- **run test in a headless mode**
+``` 
+./node_modules/.bin/cypress run
+```
+- **run test in a headed mode**
+``` 
+./node_modules/.bin/cypress run --headed --browser chrome
+```
+- **run test in a headed mode on Chrome**
+``` 
+./node_modules/.bin/cypress run --headed 
+```
+- **run a specific test**
+``` 
+./node_modules/.bin/cypress run --spec cypress/e2e/webdriver-uni/contact-us.js
+```
+- **run a folder with tests**
+``` 
+./node_modules/.bin/cypress run --spec cypress/e2e/webdriver-uni/*
 ```
 
 ## Useful  commands
