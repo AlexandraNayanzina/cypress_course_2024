@@ -9,7 +9,7 @@ describe('Test suite', {
   let userData
 
   beforeEach(()=> {
-    cy.fixture("user_data.json").then((uData) => {
+    cy.fixture("test_store_user_data.json").then((uData) => {
       userData = uData.user_data
     })
     cy.visit("/")
@@ -17,7 +17,6 @@ describe('Test suite', {
 
 
   it('Test Contact Us from via Automation Test Store', ()=> {
-    cy.fixture("user_data.json").as('userData')
     cy.xpath('//a[contains(text(), \'Contact Us\')]').click({force: true})
     cy.location('pathname').should('eq','/index.php')
     cy.get('#ContactUsFrm_first_name').type(userData.first_name)
