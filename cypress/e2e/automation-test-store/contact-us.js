@@ -25,6 +25,8 @@ describe('Test suite', {
     cy.xpath('//button[@title="Submit"]').click({force: true})
     cy.location('search').should('eq','?rt=content/contact/success')
     cy.get('.contentpanel p').should('have.text','Your enquiry has been successfully sent to the store owner!')
+    cy.log('Test has finished - cypress log message') // runs synchronously as this is cypress command
+    console.log('Test has finished - console message') //runs asynchronously as this is not a cypress command
   })
 
 })
