@@ -25,4 +25,18 @@ describe('Inspect items using chaining commands',()=> {
       .first()
       .should('have.attr','title','Add to Cart')
   })
+
+  it('Get the element text using then() method',()=> {
+    cy.get('.prdocutname').first().then(item=> {
+      console.log(`The first item has the following text: ${item.text()} `)
+    })
+    cy.get('.prdocutname').first().then(item=> {
+      console.log(`The first item has the following text: ${item.text()} `)
+    })
+    console.log('This is an async message')
+    cy.get('h2').contains('Contact Us').then(elem=> {
+      cy.log(`You clicked the following menu item: ${elem.text()}`)
+    })
+  })
+
 })
