@@ -171,8 +171,8 @@
     "triggerAllTests-headless": "npx cypress run",
     "triggerAllTests-headed": "npx cypress run --headed",
     "triggerAllTests-chrome": "npx cypress run --browser chrome",
-    "pushCheckGitHubActions": "npx cypress run --record --key 95f594b8-0223-4f86-ae6e-22473c0824a6",
-    "manualTriggerAllTests-dashboard": "npx cypress run --record --key ad79f772-2145-492d-a1c0-97c744b943a6"
+    "pushCheckGitHubActions": "npx cypress run --record --key ${{ secrets.RUN_TESTS_ON_PUSH }}",
+    "manualTriggerAllTests-dashboard": "npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}"
   },
   "repository": {
     "type": "git",
