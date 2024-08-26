@@ -41,6 +41,23 @@ npx cypress open
 ``` 
 ./node_modules/.bin/cypress run --spec cypress/e2e/webdriver-uni/*
 ```
+### Custom scripts
+- **run all tests headless**
+``` 
+npm run triggerAllTests-headless
+```
+- **run all tests headed**
+``` 
+npm run triggerAllTests-headed
+```
+- **run all tests in Chrome**
+``` 
+npm run triggerAllTests-chrome
+```
+- **run all test using Cypress Dashboard**
+``` 
+npm run triggerAllTests-dashboard
+```
 
 ## Useful  commands
 - **install xpath plugin**
@@ -57,3 +74,4 @@ specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx, feature}"
 ## Useful  links
 - **[Chai assertion library](https://www.chaijs.com/)**
 - **[Cypress doc, assertions](https://docs.cypress.io/guides/references/assertions)**
+- **[npm](https://docs.npmjs.com/about-npm)**
