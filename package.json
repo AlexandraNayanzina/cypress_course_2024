@@ -172,7 +172,7 @@
     "triggerAllTests-headed": "npx cypress run --headed",
     "triggerAllTests-chrome": "npx cypress run --browser chrome",
     "pushCheckGitHubActions": "npx cypress run --record --key ${{ secrets.RUN_TESTS_ON_PUSH }}",
-    "manualTriggerAllTestsGitHubActions": "npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --env project_id=47teht"
+    "manualTriggerAllTestsGitHubActions": "npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}"
   },
   "repository": {
     "type": "git",
