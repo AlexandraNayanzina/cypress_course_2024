@@ -1,7 +1,9 @@
 {
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
-    "cypress": "^10.7.0"
+    "cypress": "^10.7.0",
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha-junit-reporter": "^2.2.1"
   },
   "name": "cypress_course_2024",
   "description": "Udemy. The Complete Cypress v12 Course- Automation Testing Bootcamp.",

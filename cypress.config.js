@@ -1,7 +1,6 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  // projectId: "",
   e2e: {
     baseUrl: "https://automationteststore.com",
     setupNodeEvents(on, config) {
@@ -9,6 +8,10 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx, feature}",
     screenshotOnRunFailure: true
+  },
+  reporter: 'cypress-multi-reporters',
+  reporterOptions: {
+    configFile: 'reporter-config.json'
   },
 
 });
