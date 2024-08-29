@@ -58,6 +58,13 @@ npm run triggerAllTests-chrome
 ``` 
 npm run triggerAllTests-dashboard
 ```
+- **record run on the Cypress Cloud.
+Pass Project ID and Record Key in CLI**
+``` 
+export CYPRESS_PROJECT_ID={env var}
+export CYPRESS_RECORD_KEY={env var}
+npx cypress run --record
+```
 
 ## Useful  commands
 - **install xpath plugin**
