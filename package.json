@@ -174,7 +174,10 @@
     "triggerAllTests-headed": "npx cypress run --headed",
     "triggerAllTests-chrome": "npx cypress run --browser chrome",
     "pushCheckGitHubActions": "npx cypress run --record --key ${{ secrets.RUN_TESTS_ON_PUSH }}",
-    "manualTriggerAllTestsGitHubActions": "npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}"
+    "manualTriggerAllTestsGitHubActions": "npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}",
+    "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
+    "delete-results": "rm -rf cypress/results/* || true"
   },
   "repository": {
     "type": "git",
