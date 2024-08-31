@@ -28,4 +28,4 @@ jobs:
         run: npm install cypress --save-dev
 
       - name: Run Cypress tests
-        run: npx cypress run --record
+        run: npx cypress run
