@@ -5,3 +5,5 @@
 /cypress/downloads/
 /cypress.env.json
 /cypress/results/
+/mochawesome-report/
+/mochawesome.json

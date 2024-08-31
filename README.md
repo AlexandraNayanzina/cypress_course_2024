@@ -79,6 +79,7 @@ specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx, feature}"
 ```
 
 ## Useful  links
-- **[Chai assertion library](https://www.chaijs.com/)**
-- **[Cypress doc, assertions](https://docs.cypress.io/guides/references/assertions)**
-- **[npm](https://docs.npmjs.com/about-npm)**
+- [Chai assertion library](https://www.chaijs.com/)
+- [Cypress doc, assertions](https://docs.cypress.io/guides/references/assertions)
+- [npm](https://docs.npmjs.com/about-npm)
+- [mochawesome reporter](https://docs.npmjs.com/about-npm)
