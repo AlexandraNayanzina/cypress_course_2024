@@ -65,6 +65,10 @@ export CYPRESS_PROJECT_ID={env var}
 export CYPRESS_RECORD_KEY={env var}
 npx cypress run --record
 ```
+- **run with specific config file**
+``` 
+cypress run --env configFile=staging
+```
 
 ## Useful  commands
 - **install xpath plugin**

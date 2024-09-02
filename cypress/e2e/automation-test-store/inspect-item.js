@@ -5,7 +5,7 @@ describe('Inspect items using chaining commands',()=> {
   let testData
 
   beforeEach(()=> {
-    cy.visit('https://automationteststore.com/')
+    cy.visit('/')
     cy.fixture('test_store_user_data.json').then((uData)=>{
       testData = uData.user_data
     })
