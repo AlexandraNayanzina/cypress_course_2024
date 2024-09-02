@@ -87,3 +87,4 @@ specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx, feature}"
 - [Cypress doc, assertions](https://docs.cypress.io/guides/references/assertions)
 - [npm](https://docs.npmjs.com/about-npm)
 - [mochawesome reporter](https://docs.npmjs.com/about-npm)
+- [Cypress Cloud](https://cloud.cypress.io)

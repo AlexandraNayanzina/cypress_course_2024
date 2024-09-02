@@ -19,6 +19,8 @@ describe('Interacting with web elements', {
       //   runMode:0,
       //   openMode:1
       // }
+      // If browser is firefox the test will be executed
+        //browser: 'firefix'
     },
       ()=> {
       cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
