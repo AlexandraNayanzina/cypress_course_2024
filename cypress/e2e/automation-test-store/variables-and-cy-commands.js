@@ -3,7 +3,7 @@ describe('Verifying variables, cypress commands, and jquery commands',() => {
 
   beforeEach(()=> {
 
-    cy.visit('https://automationteststore.com/')
+    cy.visit('/')
 
   })
 
@@ -19,13 +19,13 @@ describe('Verifying variables, cypress commands, and jquery commands',() => {
         expect($item.text()).contains(categories[i])
       })
       categoryTitleMakeUp.then(item=> {
-        cy.log(`The categoty is: ${item.text()}`)
+        cy.log(`The category is: ${item.text()}`)
       })
     }
   })
 
   it.only('Validate the properties of the Contact Us page',()=> {
-    cy.visit('https://automationteststore.com/index.php?rt=content/contact')
+    cy.visit('/index.php?rt=content/contact')
 
     //Uses cypress command and chaining
     cy.contains('#ContactUsFrm','First name').find('#field_11').should('contain','First name')
