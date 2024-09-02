@@ -15,6 +15,10 @@ describe('Interacting with web elements', {
 
     it('Submit Contact Us form - positive case', {
       // spec config
+      // retries:{
+      //   runMode:0,
+      //   openMode:1
+      // }
     },
       ()=> {
       cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
@@ -52,7 +56,7 @@ describe('Interacting with web elements', {
 
       })
 
-    it.only('Cypress "window" object', ()=> {
+    it('Cypress "window" object', ()=> {
 
         cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
         cy.document().should('have.property', 'charset').and('eq','UTF-8')

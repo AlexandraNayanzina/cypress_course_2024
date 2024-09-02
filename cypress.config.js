@@ -17,7 +17,11 @@ module.exports = defineConfig({
       // return getConfigurationByFile(file)
     },
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx, feature}",
-    screenshotOnRunFailure: true
+    screenshotOnRunFailure: true,
+  },
+  retries: {
+    runMode: 1,
+    openMode: 1
   },
   reporter: 'cypress-multi-reporters',
   reporterOptions: {
