@@ -75,6 +75,11 @@ cypress run --env configFile=staging
 ``` 
 npm install --save-dev @cypress/xpath
 ```
+- **run jenkins locally from .war file port 8080**
+``` 
+java -jar jenkins.war
+```
+
 
 ## Useful  configurations
 - **Test files to load, cypress.config.js**
